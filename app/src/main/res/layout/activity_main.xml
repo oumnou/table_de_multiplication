@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/id1"
+
     tools:context=".TableDeMultiplication">
+
 
     <EditText
         android:id="@+id/edt_num"
@@ -93,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:layout_marginBottom="48dp"
-        android:background="@color/teal_200"
+        android:background="@color/warm"
 
         app:layout_constraintBottom_toTopOf="@+id/edt_num"
         app:layout_constraintEnd_toStartOf="@+id/btn_color2"
@@ -107,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:layout_marginBottom="48dp"
-        android:background="@color/purple_200"
+        android:background="@color/grey"
 
         app:layout_constraintBottom_toTopOf="@+id/edt_num"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:layout_marginBottom="48dp"
-        android:background="@color/purple_500"
+        android:background="@color/yellow"
         app:layout_constraintBottom_toTopOf="@+id/edt_num"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
