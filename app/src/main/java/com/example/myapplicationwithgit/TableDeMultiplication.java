@@ -1,11 +1,13 @@
 package com.example.myapplicationwithgit;
 
+
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class TableDeMultiplication extends AppCompatActivity {
 
@@ -15,6 +17,7 @@ public class TableDeMultiplication extends AppCompatActivity {
 
 
 
+    TextView tv_multip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,17 @@ public class TableDeMultiplication extends AppCompatActivity {
         btn_color2.setOnClickListener(view -> relativeLayout.setBackgroundResource(R.color.grey));
         btn_color3.setOnClickListener(view -> relativeLayout.setBackgroundResource(R.color.yellow));
 
+        tv_multip = findViewById(R.id.tv_multi);
+
+        btn_reinit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt_num.setText("");
+                tv_multip.setText(R.string.table);
+
+
+            }
+        });
 
     }
 }

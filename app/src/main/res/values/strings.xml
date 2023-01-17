@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">MyApplicationWithGit</string>
     <string name="table">\ ? * 1 = ? \n
         ? * 2 = ? \n
         ? * 3 = ? \n
@@ -10,6 +9,9 @@
         ? * 8 = ? \n
         ? * 9 = ? \n
         ? * 10 = ? \n</string>
+
+    <string name="app_name">Table de multiplication</string>
+
     <string name="quitter">Quitter</string>
     <string name="afficher">Afficher</string>
     <string name="reinitialiser">reinitialiser</string>
