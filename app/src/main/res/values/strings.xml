@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyApplicationWithGit</string>
+    <string name="app_name">Table de multiplication</string>
     <string name="table">\
         ? * 1 = ? \n
     ? * 2 = ? \n
