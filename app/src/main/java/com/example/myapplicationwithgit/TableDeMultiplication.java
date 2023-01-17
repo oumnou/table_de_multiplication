@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TableDeMultiplication extends AppCompatActivity {
 
@@ -30,27 +31,38 @@ public class TableDeMultiplication extends AppCompatActivity {
         btn_aff = findViewById(R.id.btn_aff);
 
         btn_reinit.setOnClickListener(view -> {
-            edt_num.setText("");
-            tv_multip.setText(R.string.table);
+
+            String m = edt_num.getText().toString();
+
+            if(m.equals("")){
+
+                Toast.makeText(this, "Rien a reinitialiser", Toast.LENGTH_SHORT).show();
+            }else{
+
+                edt_num.setText("");
+                tv_multip.setText(R.string.table);
+            }
         });
 
         btn_ann.setOnClickListener(view -> System.exit(0));
 
         btn_aff.setOnClickListener(view -> {
 
-
-
             String m = edt_num.getText().toString();
-
-
+            if(m.equals(""))
+            {
+                tv_multip.setText(R.string.table);
+                Toast.makeText(this, "Veuillez entrer un nbr", Toast.LENGTH_SHORT).show();
+            }
+            else{
              n = Integer.parseInt(m);
 
             for (int i = 0; i < 11; i++) {
-                    s += n + " * " + i + " = " + n*i + "\n" ;}
-
+                s += n + " * " + i + " = " + n*i + "\n" ;
+            }
             tv_multip.setText(s);
             s = "";
-            edt_num.setText("");
+            edt_num.setText("");}
 
         });
 
